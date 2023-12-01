@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(255, 244, 160);
+            }
+            a{
+                font-family: sans-serif;
+            }
+            a:link {
+                color: green;
+            }
+            a:visited {
+                color: rgb(208, 3, 205);
+            }
+            a:hover {
+                color: red;
+            }
+            a:active {
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="date"><b>Today's Date</b></p>
+        <h4 align="center" id="h4">CONTENTS</h4>
+        <ul>
+            <li><a href="listinfo.html" target="right">Lists</a></li>
+            <li><a href="tableinfo.html" target="right">Tables</a></li>
+            <li><a href="regform.html" target="right">Form</a></li>
+            <li><label style="font-family: sans-serif;">Javascript Files</label>
+                <ul type="circle">
+                    <li><a href="game1.html" target="right">Tic Tac Toe</a></li>
+                    <li><a href="bill1.html" target="right">Hotel "Hello, World!"</a></li>
+                </ul>
+            </li>
+        </ul>
+        <script>
+            document.getElementById("date").addEventListener("click", fun2);
+            function fun2() {
+                const dat = new Date();
+                let day = dat.getDate();
+                let month = dat.getMonth() + 1;
+                let year = dat.getFullYear();
+                let currentDate = `${day}-${month}-${year}`;
+                document.getElementById("date").innerHTML = currentDate;
+            }
+        </script>
+    </body>
+</html>

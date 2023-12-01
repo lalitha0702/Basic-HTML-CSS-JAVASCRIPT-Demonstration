@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="bills.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 align="center" style="font-family:Verdana, Geneva, Tahoma, sans-serif">HOTEL "Hello, World!"</h1>
+        <h1 align="center" style="font-family:Verdana, Geneva, Tahoma, sans-serif">Today's Menu...</h1>
+        <div class="t1">
+            <br>
+            <table border="1" cellpadding="15" cellspacing="0.5" align="center" id="hello">
+                <tr>
+                    <th style="font-family:cursive">ITEM</th>
+                    <th style="font-family:cursive">PRICE</th>
+                </tr>
+                <tr>
+                    <td>Chicken Biryani</td>
+                    <td>INR 200.00</td>
+                </tr>
+                <tr>
+                    <td>Chicken 65</td>
+                    <td>INR 195.00</td>
+                </tr>
+                <tr>
+                    <td>Veg Dum Biryani</td>
+                    <td>INR 210.00</td>
+                </tr>
+                <tr>
+                    <td>Veg Thaali</td>
+                    <td>INR 710.00</td>
+                </tr>
+            </table>
+            <br>
+            <hr class="style1">
+            <h3 align="center"><i>Please place your order..</i></h3>
+            <div class="container">
+                <div class="div2">
+                    <form>
+                        <select id="item1">
+                            <option value="Chicken Biryani">Chicken Biryani</option>
+                            <option value="Chicken 65">Chicken 65</option>
+                            <option value="Veg Dum Biryani">Veg Dum Biryani</option>
+                            <option value="Veg Thaali">Veg Thaali</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="div3">
+                    <input type="text" id="entrybox" pattern="\d*" placeholder="Enter Quantity" size="10">&nbsp;
+                </div>
+                <div class="div4">
+                    <input type="button" value="Add Item" class="mybutton" id="getme">
+                </div>
+            </div>
+            <br>
+            <div class="div5">
+                <textarea class="bill" cols="90" rows="20" id="writeme"></textarea>
+            </div>
+            <br>
+            <div class="container">
+                <input type="submit" value="Clear Selection" class="clear" id="clr">
+                <input type="submit" value="Pay Bill" class="pay" id="out">
+            </div>
+        </div>
+        <script src="billj.js"></script>
+    </body>
+</html>

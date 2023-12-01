@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link href="mystyles.css" rel="stylesheet">
+				<style>
+					body{
+						background-color: rgb(252, 255, 171);
+					}
+				</style>
+				<script>
+					function help(){
+						alert("Contact Us at: 9997873137\n556677889900")
+					}
+				</script>
+		</head>
+		<body>
+				<div class="styles">
+						<form name="registration" method="get" action=" ">
+						<h1>REGISTRATION FORM</h1>
+						<hr class="style1">
+						<table border="0" cellspacing="0" cellpadding="7">
+								<tr>
+										<td><label for="name">Name    :  </label></td>
+										<td><input type="text" name="name" size="45" placeholder="Enter Name" required></td>
+								</tr>
+								
+								<tr>
+										<td><label for="email">Email  :  </label></td>
+										<td><input type="email" name="email" size="45" placeholder="Enter Email" required></td>
+								</tr>
+								
+								<tr>
+										<td><label for="gender"> Gender  :  </label></td>
+										<td><input type="radio"  name="gender">Male
+										<input type="radio"  name="gender">Female
+										<input type="radio"  name="gender">Others</td>
+								</tr>
+								
+								<tr>
+										<td><label for="rel">Religion  :  </label></td>
+										<td>
+												<select name="rel" required>
+														<option>Hindu</option>
+														<option>Muslim</option>
+														<option>Christian</option>
+														<option>Other</option>
+												</select>
+										</td>
+								</tr>
+								
+								<tr>
+										<td><label for="dob">DOB  :  </label></td>
+										<td><input type="date" name="dob" size="45" placeholder="Enter Date of birth" required></td>
+								</tr>
+								
+								<tr>
+										<td><label for="lan">Languages  :  </label></td>
+										<td><input type="checkbox" name="lan" required>English
+										<input type="checkbox" name="lan" required>Hindi
+										<input type="checkbox" name="lan" required>Telugu
+										</td>
+								</tr>
+								
+								<tr>
+										<td><label for="add">Address   :  </label></td>
+										<td><textarea cols="45" rows="5" value="address"></textarea></td>
+								</tr>
+								
+								<tr>
+										<td><label for="password">Password   :  </label></td>
+										<td><input type="password" id="pass" name="pass" size="45" placeholder="Enter Password"></td>
+								</tr>
+								
+								<tr>
+										<td><label for="repass">Confirm Password   :  </label></td>
+										<td><input type="password" id="repass" name="repass" size="45" placeholder="Confirm Password"></td>
+								</tr>
+								
+								<tr>
+										<td><input type="submit" value="Submit" class="hell"></td>
+										<td><input type="reset" value="Reset" class="hell"></td>
+								</tr>
+						</table>
+						
+						</form>
+				</div>
+				<div class="foo">
+				       <h4>Instructions</h4>
+						<ul>
+								<li>Fill out all the required fields.</li>
+								<li>Read the instructions carefully.</li>
+						</ul>
+				</div>
+				<div>
+				<nav  class="help">
+						<a onclick="help()" href="#"><u>Help</u></a>
+				</nav>
+				</div>
+		</body>
+</html>
